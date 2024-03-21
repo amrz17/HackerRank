@@ -6,6 +6,6 @@ export function diagonalDifference(arr: number[][]): number {
     sumDiagonalRight += arr[i][arr.length - 1 - i];
     sumDiagonalLeft += arr[i][i];
   }
-  diff = sumDiagonalRight - sumDiagonalLeft;
+  diff = Math.abs(sumDiagonalRight - sumDiagonalLeft);
   return diff;
 }
